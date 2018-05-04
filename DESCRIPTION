@@ -1,0 +1,27 @@
+Package: dummy
+Title: Nothing Special Here
+Date: 2018-05-03
+Version: 0.3.1
+Authors@R: c(
+    person("Quentin", "geissmann", role = c("aut", "cre"), email = "qgeissmann@gmail.com")
+    )
+Description: Some description goes here
+Depends:  
+    R (>= 3.00),
+    behavr,
+    data.table
+Imports: 
+   readr
+Suggests: 
+    testthat,
+    covr,
+    knitr
+Remotes:
+    rethomics/behavr
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/rethomics/TODO
+BugReports: https://github.com/rethomics/TODO/issues
+RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)
