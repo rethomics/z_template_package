@@ -6,6 +6,8 @@ cache: packages
 latex: true
 dist: trusty 
 
+r_packages: desc
+
 env:
     global:
         - MAKEFLAGS="-j 2"
@@ -17,11 +19,12 @@ matrix:
       env: R_RELEASE=true  
     - r: devel
       env: R_DEVEL=true
-
 script:
-    sh .travis_script.sh
+    - set -e
+    - bash .travis_check.sh
+    - bash .travis_deploy.sh 
 after_success:
-    sh .travis_after_success.sh
+    - bash .travis_after_success.sh     
 notifications:
     email:
         on_success: change
