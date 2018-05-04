@@ -2,7 +2,6 @@
 ^\.Rproj\.user$
 ^README\.Rmd$
 ^README-.*\.png$
-^\.travis\.yml$
 ^\.publish_doc\.sh$
 ^Makefile$
 ^cran-comments\.md$
@@ -11,3 +10,4 @@
 ^.*\.tar\.gz$
 ^.*\.pdf$
 z_template_package/ 
+^\.travis.*$
