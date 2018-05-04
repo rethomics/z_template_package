@@ -10,3 +10,4 @@
 ^revdep$
 ^.*\.tar\.gz$
 ^.*\.pdf$
+z_template_package/ 
