@@ -22,7 +22,7 @@ git config user.email "travis"
 ls 
 
 cd 
-git clone -b master https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git repo.git
+git clone -b master --recurse-submodules https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git repo.git
 
 cd repo.git
 git submodule update --recursive --remote
