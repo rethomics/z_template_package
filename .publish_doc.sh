@@ -17,10 +17,12 @@ ls
 
 cd 
 git clone -b master https://${GITHUB_PAT}@github.com/${TRAVIS_REPO_SLUG}.git repo.git
+git submodule update --recursive --remote
 cd repo.git
 make clean
 make pdf
 make README.md
-git add *.pdf README.md
+cp z_template_package/.travis.yml .
+git add *.pdf README.md .travis.yml
 git commit -m"Automatic deployment after $TRAVIS_COMMIT [ci skip]" || true
 git push -q origin master
