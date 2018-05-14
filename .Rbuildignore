@@ -1,4 +1,5 @@
 z_template_package
+raw_data
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^README\.Rmd$
