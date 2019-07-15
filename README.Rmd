@@ -35,7 +35,7 @@ tutorial_url <- sprintf("https://rethomics.github.io/%s.html", pkg_name)
 `r pkg_name_code` is part of the [rethomics framework](https://rethomics.github.io/).
 This README is a short explanation of the basics of `r pkg_name_code`.
 A comprehensive tutorial is available on the [rethomics webpage](`r tutorial_url`).
-We also provide a [conventional pdf documentation](`r sprintf("%s.pdf", pkg_name)`).
+We also provide a [conventional pdf documentation](`r sprintf("https://github.com/rethomics/%s/raw/master/%s.pdf", pkg_name, pkg_name)`).
 
 
 ## Installation
