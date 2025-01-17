@@ -3,13 +3,13 @@ pkg_name <- desc::desc_get_field("Package","DESCRIPTION")
 pkg_name_code <- sprintf('`%s`',pkg_name)
 
 travis = list()
-travis$img <- sprintf('https://travis-ci.org/rethomics/%s.svg?branch=master',pkg_name)
-travis$url <- sprintf('https://travis-ci.org/rethomics/%s',pkg_name)
+travis$img <- sprintf('https://app.travis-ci.com/rethomics/%s.svg?branch=master',pkg_name)
+travis$url <- sprintf('https://app.travis-ci.com/rethomics/%s',pkg_name)
 travis$badge <- sprintf("[![Travis-CI Build Status](%s)](%s)", travis$img,travis$url)
 
 codecov = list()
 codecov$img <- sprintf('https://img.shields.io/codecov/c/github/rethomics/%s/master.svg',pkg_name)
-codecov$url <- sprintf('https://codecov.io/github/rethomics/%s?branch=master',pkg_name)
+codecov$url <- sprintf('https://app.codecov.io/github/rethomics/%s?branch=master',pkg_name)
 codecov$badge <- sprintf("[![Coverage Status](%s)](%s)", codecov$img,codecov$url)
 
 cran = list()
