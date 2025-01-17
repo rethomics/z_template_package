@@ -13,7 +13,7 @@ codecov$url <- sprintf('https://codecov.io/github/rethomics/%s?branch=master',pk
 codecov$badge <- sprintf("[![Coverage Status](%s)](%s)", codecov$img,codecov$url)
 
 cran = list()
-cran$img <- sprintf('http://www.r-pkg.org/badges/version/%s',pkg_name)
+cran$img <- sprintf('https://www.r-pkg.org/badges/version/%s',pkg_name)
 cran$url <- sprintf('https://cran.r-project.org/package=%s',pkg_name)
 cran$badge <- sprintf("[![CRAN](%s)](%s)", cran$img,cran$url)
 
